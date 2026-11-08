@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background-color: #fb6369;
+    background-color: #F2472D;
     color: #25201e;
     font-family: Verdana, Arial, sans-serif;
     font-size: 16px;
@@ -542,22 +542,45 @@ button:hover {
 .contenido-creditos img {
     max-height: 180px;
 }
-
+/* Pie de página */
 .pie-pagina {
-    color: #fff7e7;
-    padding-top: 20px;
+    max-width: 1160px;
+    margin: 22px auto 32px;
+    padding: 28px 30px;
+
+    /* Cuadro blanco */
+    background-color: #fff8ef;
+    border: 1px solid #f8dda1;
+    border-radius: 14px;
+
+    /* Texto */
+    color: #25201e;
+
+    /* Desplazamiento hacia la derecha */
+    position: relative;
+    left: 15px;
 }
 
-.pie-pagina h2, .pie-pagina a {
-    color: #fff7e7;
+/* Título del pie de página */
+.pie-pagina h2 {
+    color: #722b31;
+    margin-bottom: 20px;
 }
 
+/* Enlaces */
+.pie-pagina a {
+    color: #206047;
+    font-weight: bold;
+}
+
+/* Distribución del contenido */
 .contenido-pie {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
+/* Información individual */
 .dato-pie {
     flex: 1;
     min-width: 230px;
@@ -565,14 +588,11 @@ button:hover {
     gap: 10px;
 }
 
-.dato-pie img[src="ACA_INGRESA_LINK_IMAGEN"],
-img[src="ACA_INGRESA_LINK_IMAGEN"] {
-    display: none;
-}
-
+/* Créditos de los iconos */
 .creditos-iconos {
     font-size: 12px;
     margin-top: 18px;
+    color: #514640;
 }
 
 
@@ -706,5 +726,24 @@ img[src="ACA_INGRESA_LINK_IMAGEN"] {
 
     .contenido-creditos {
         flex-direction: column;
+    }
+}
+
+/* Pie de página en celulares */
+@media (max-width: 600px) {
+
+    .pie-pagina {
+        left: 0;
+        margin: 14px 12px 24px;
+        padding: 18px;
+    }
+
+    .contenido-pie {
+        flex-direction: column;
+    }
+
+    .dato-pie {
+        min-width: 0;
+        overflow-wrap: anywhere;
     }
 }
