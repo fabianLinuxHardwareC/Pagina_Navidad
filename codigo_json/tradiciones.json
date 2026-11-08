@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "La posada",
+        "categoria": "religiosas",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Desfiles Navideños",
+        "categoria": "celebraciones",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Misa de Gallo",
+        "categoria": "religiosas",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Vestir con Ropa nueva o Estreno",
+        "categoria": "costumbres",
+        "descripcion": ""
+    },
+    {
+        "nombre": "El muñeco",
+        "categoria": "costumbres",
+        "descripcion": ""
+    },
+    {
+        "nombre": "Cena navideña",
+        "categoria": "costumbres",
+        "descripcion": ""
+    }
+]

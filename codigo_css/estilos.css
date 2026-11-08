@@ -580,19 +580,41 @@ button:hover {
     gap: 15px;
 }
 
-/* Información individual */
-.dato-pie {
-    flex: 1;
-    min-width: 230px;
+/* Información del pie de página */
+.contenido-pie {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
-/* Créditos de los iconos */
-.creditos-iconos {
-    font-size: 12px;
-    margin-top: 18px;
-    color: #514640;
+/* Contenedor de cada logotipo y su texto */
+.dato-pie {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    gap: 12px;
+}
+
+/* Tamaño de los logotipos */
+.dato-pie img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Texto de los logotipos */
+.dato-pie p {
+    margin: 0;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* Enlaces del pie de página */
+.dato-pie a {
+    overflow-wrap: anywhere;
 }
 
 
@@ -728,22 +750,33 @@ button:hover {
         flex-direction: column;
     }
 }
-
 /* Pie de página en celulares */
 @media (max-width: 600px) {
 
+    /* Contenedor principal */
     .pie-pagina {
         left: 0;
         margin: 14px 12px 24px;
         padding: 18px;
     }
 
+    /* Organización vertical */
     .contenido-pie {
         flex-direction: column;
+        align-items: stretch;
     }
 
+    /* Información del pie de página */
     .dato-pie {
+        width: 100%;
         min-width: 0;
         overflow-wrap: anywhere;
     }
+
+    /* Tamaño de los logotipos */
+    .dato-pie img {
+        width: 38px;
+        height: 38px;
+    }
+
 }
