@@ -14,9 +14,9 @@
     <!-- Encabezado de la página -->
     <header class="encabezado">
         <div class="titulo-pagina">
-            <img src="/home/spiderfurry-159/Desktop/buzon-navideno-Ferrer-Tugri/Imagenes_Pagina/ArbolENcabezadoN.jpg" alt="Árbol navideño izquierdo">
+            <img src="../Imagenes_Pagina/ArbolENcabezadoN.jpg" alt="Árbol navideño izquierdo">
             <h1>Buzón Navideño</h1>
-            <img src="/home/spiderfurry-159/Desktop/buzon-navideno-Ferrer-Tugri/Imagenes_Pagina/ArbolENcabezadoN.jpg" alt="Árbol navideño derecho">
+            <img src="../Imagenes_Pagina/ArbolENcabezadoN.jpg" alt="Árbol navideño derecho">
         </div>
 
         <!-- Mensaje de bienvenida -->
@@ -36,25 +36,25 @@
                 <ul>
                     <li>
                         <a href="#Seccion1">
-                            <img src="ACA_INGRESA_LINK_IMAGEN" alt="Icono de tradiciones">
+                            <img src="../Imagenes_Pagina/icono-tradiciones.svg" alt="">
                             Tradiciones
                         </a>
                     </li>
                     <li>
                         <a href="#Seccion2">
-                            <img src="ACA_INGRESA_LINK_IMAGEN" alt="Icono de carta a Santa">
+                            <img src="../Imagenes_Pagina/icono-carta.svg" alt="">
                             Carta para Santa
                         </a>
                     </li>
                     <li>
                         <a href="#Seccion3">
-                            <img src="ACA_INGRESA_LINK_IMAGEN" alt="Icono de cuenta regresiva">
+                            <img src="../Imagenes_Pagina/icono-dias.svg" alt="">
                             Días restantes
                         </a>
                     </li>
                     <li>
                         <a href="#Seccion4">
-                            <img src="ACA_INGRESA_LINK_IMAGEN" alt="Icono de créditos">
+                            <img src="../Imagenes_Pagina/icono-creditos.svg" alt="">
                             Créditos
                         </a>
                     </li>
@@ -96,7 +96,7 @@
 
                 <div class="imagen-descripcion">
                     <h3>Navidad en Panamá</h3>
-                    <img src="/home/spiderfurry-159/Desktop/buzon-navideno-Ferrer-Tugri/ParqueUrracaNavidad.jpeg" alt="Decoración navideña en Panamá">
+                    <img src="../ParqueUrracaNavidad.jpeg" alt="Decoración navideña en el Parque Urracá de Panamá">
                     <p>Una época para compartir con nuestros familiares y amigos.</p>
                 </div>
             </div>
@@ -139,36 +139,34 @@
         <!-- Sección 3: Cuenta regresiva -->
         <section id="Seccion3" class="seccion-cuenta-regresiva">
             <div class="tituloCuenta">
-                <img src="ACA_INGRESA_LINK_IMAGEN" alt="Adorno navideño izquierdo">
+                <img src="../Imagenes_Pagina/reloj-vector.svg" alt="">
                 <h2>Cuenta Regresiva</h2>
-                <img src="ACA_INGRESA_LINK_IMAGEN" alt="Adorno navideño derecho">
+                <img src="../Imagenes_Pagina/reloj-vector.svg" alt="">
             </div>
 
             <!-- Cajas de días, horas, minutos y segundos -->
             <div class="contenedor-cuenta">
+
                 <div class="caja-tiempo">
-                    <img src="ACA_INGRESA_LINK_IMAGEN" alt="Imagen de días">
                     <p id="dias">00</p>
                     <p>Días</p>
                 </div>
 
                 <div class="caja-tiempo">
-                    <img src="ACA_INGRESA_LINK_IMAGEN" alt="Imagen de horas">
                     <p id="horas">00</p>
                     <p>Horas</p>
                 </div>
 
                 <div class="caja-tiempo">
-                    <img src="ACA_INGRESA_LINK_IMAGEN" alt="Imagen de minutos">
                     <p id="minutos">00</p>
                     <p>Minutos</p>
                 </div>
 
                 <div class="caja-tiempo">
-                    <img src="ACA_INGRESA_LINK_IMAGEN" alt="Imagen de segundos">
                     <p id="segundos">00</p>
                     <p>Segundos</p>
                 </div>
+
             </div>
 
             <p id="mensaje-cuenta">¡Cada día estamos más cerca de Navidad!</p>
@@ -178,9 +176,10 @@
 
         <!-- Sección 2: Carta a Santa y lista de deseos -->
         <section id="Seccion2" class="seccion-santa">
+
             <div class="tituloSanta">
                 <h2>Querido Santa...</h2>
-                <img src="ACA_INGRESA_LINK_IMAGEN" alt="Imagen de Santa Claus">
+                <img src="../Imagenes_Pagina/santa-openmoji-adaptado.svg" alt="Santa Claus sonriendo">
             </div>
 
             <!-- Formulario de la carta -->
@@ -190,10 +189,12 @@
 
             <div class="formCarta">
                 <form id="form-carta">
+
                     <div class="contenido-formulario-carta">
 
                         <!-- Datos personales -->
                         <div class="columna-datos">
+
                             <div class="campo-formulario">
                                 <label for="nombre">Nombre</label>
                                 <input type="text" id="nombre" name="nombre" required>
@@ -208,10 +209,12 @@
                                 <label for="correo">Correo electrónico</label>
                                 <input type="email" id="correo" name="correo" required>
                             </div>
+
                         </div>
 
                         <!-- Provincia y comportamiento -->
                         <div class="columna-opciones">
+
                             <div class="campo-formulario">
                                 <label for="provincia">Provincia</label>
                                 <input type="text" id="provincia" name="provincia"
@@ -234,6 +237,7 @@
                                 </datalist>
                             </div>
 
+                            <!-- Selección de comportamiento -->
                             <fieldset class="campo-formulario">
                                 <legend>¿Cómo te portaste este año?</legend>
 
@@ -255,6 +259,7 @@
                                 <input type="checkbox" id="incluir-lista" name="incluirLista">
                                 <label for="incluir-lista">Incluir lista de deseos</label>
                             </div>
+
                         </div>
 
                         <!-- Texto de la carta -->
@@ -263,6 +268,7 @@
                             <textarea id="carta_texto" name="carta_texto" rows="10"
                                       cols="30" required></textarea>
                         </div>
+
                     </div>
 
                     <!-- Botones de la carta -->
@@ -270,10 +276,18 @@
                         <button type="submit" id="enviar-carta">Aceptar</button>
                         <button type="reset">Borrar</button>
                     </div>
+
                 </form>
 
                 <!-- Aquí aparecerá el resultado del envío -->
                 <p id="resultado-carta"></p>
+            </div>
+
+            <!-- Resumen de deseos entre ambos formularios -->
+            <div class="total">
+                <h4>Deseos agregados</h4>
+                <ul id="lista-deseos"></ul>
+                <p>Total: B/. <span id="total-deseos">0.00</span></p>
             </div>
 
             <!-- Formulario de la lista de deseos -->
@@ -282,6 +296,7 @@
             </div>
 
             <div class="contenido-lista-deseos">
+
                 <div class="formLista">
                     <form id="form-deseos">
 
@@ -297,17 +312,17 @@
                         </div>
 
                         <button type="submit" id="agregar-deseo">Agregar</button>
+
                     </form>
                 </div>
 
-                <!-- Lista vacía y total de los deseos -->
-                <div class="total">
-                    <h4>Deseos agregados</h4>
-                    <ul id="lista-deseos"></ul>
-                    <p>Total: B/. <span id="total-deseos">0.00</span></p>
-                    <img src="ACA_INGRESA_LINK_IMAGEN" alt="Regalos de Navidad">
+                <!-- Imagen de regalos -->
+                <div class="imagen-regalos">
+                    <img src="../Imagenes_Pagina/icono-regalo.svg" alt="Regalos de Navidad">
                 </div>
+
             </div>
+
         </section>
 
         <hr>
@@ -325,6 +340,7 @@
             <h2>Créditos de la Página</h2>
 
             <div class="contenido-creditos">
+
                 <div class="imagen-descripcion">
                     <img src="ACA_INGRESA_LINK_IMAGEN" alt="Fotografía de Fabián Ferrer">
                     <h3>Fabián Ferrer</h3>
@@ -336,8 +352,10 @@
                     <h3>Richard Tugri</h3>
                     <p>Desarrollador del proyecto Buzón Navideño.</p>
                 </div>
+
             </div>
         </section>
+
     </main>
 
     <!-- Pie de página -->
@@ -345,6 +363,7 @@
         <h2>Pie de página</h2>
 
         <div class="contenido-pie">
+
             <div class="dato-pie">
                 <img src="ACA_INGRESA_LINK_IMAGEN" alt="Icono de contacto">
                 <p>Contacto:
@@ -363,10 +382,30 @@
                 <img src="ACA_INGRESA_LINK_IMAGEN" alt="Icono de GitHub">
                 <p>Repositorio:
                     <a href="https://github.com/fabianLinuxHardwareC/Pagina_Navidad.git"
-                       target="_blank" rel="noopener noreferrer">GitHub</a>
+                       target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
                 </p>
             </div>
+
         </div>
+
+        <!-- Créditos de los iconos -->
+        <p class="creditos-iconos">
+            Iconos: Bootstrap Icons (licencia MIT).
+            Santa adaptado de OpenMoji (CC BY-SA 4.0).
+
+            <a href="https://icons.getbootstrap.com/"
+               target="_blank" rel="noopener noreferrer">
+                Bootstrap Icons
+            </a>
+
+            <a href="https://openmoji.org/"
+               target="_blank" rel="noopener noreferrer">
+                OpenMoji
+            </a>
+        </p>
+
     </footer>
 
 </body>

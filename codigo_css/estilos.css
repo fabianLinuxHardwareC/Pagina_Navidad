@@ -1,0 +1,710 @@
+/* Estilos generales de la página */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fb6369;
+    color: #25201e;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, p {
+    margin-top: 0;
+}
+
+h2 {
+    color: #722b31;
+}
+
+a {
+    color: #206047;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Contenedores principales */
+.encabezado, .contenido, .pie-pagina {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 22px;
+}
+
+main section {
+    margin-bottom: 26px;
+    padding: 30px;
+    background-color: #fff8ef;
+    border: 1px solid #f8dda1;
+    border-radius: 14px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 246, 224, 0.6);
+    max-width: 1160px;
+    margin: 10px auto;
+}
+
+
+/* Encabezado con los árboles a los lados */
+.titulo-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 30px;
+    background-color: #fff8ef;
+    border: 1px solid #f8dda1;
+    border-radius: 14px;
+}
+
+.titulo-pagina img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.titulo-pagina h1 {
+    color: #7c2e32;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 42px;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Mensaje de bienvenida */
+.bienvenida {
+    margin: 20px 0;
+    padding: 18px 24px;
+    text-align: center;
+    background-color: rgb(249, 234, 203);
+    border: 1px solid #d3b66d;
+    border-radius: 10px;
+}
+
+.bienvenida p {
+    margin: 0;
+}
+
+
+/* Menú horizontal */
+.barra-navegacion h2 {
+    color: #fff9ec;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.opciones {
+    background-color: #315944;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.opciones ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.opciones li {
+    flex: 1;
+    min-width: 170px;
+}
+
+.opciones a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff8ea;
+    border: 1px solid #b6b98b;
+    border-radius: 7px;
+}
+
+.opciones a:hover, .opciones a:focus {
+    background-color: #49735a;
+}
+
+.opciones img {
+    width: 27px;
+    height: 27px;
+}
+
+
+/* Introducción: imagen a la izquierda y texto a la derecha */
+.contenido-introduccion {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contenido-introduccion .imagen-descripcion {
+    order: -1;
+    flex: 0 0 39%;
+}
+
+.texto-introduccion {
+    flex: 1;
+    text-align: justify;
+}
+
+.contenido-introduccion .imagen-descripcion img {
+    width: 100%;
+    border: 1px solid #f5d889;
+    border-radius: 12px;
+}
+
+.imagen-descripcion h3 {
+    margin: 0 0 12px;
+    color: #7d3034;
+}
+
+.imagen-descripcion p {
+    margin: 10px 0 0;
+}
+
+
+/* Sección de tradiciones */
+.tituloTradicion {
+    text-align: center;
+}
+
+.contenido-tradiciones {
+    display: flex;
+    gap: 30px;
+    align-items: start;
+}
+
+.panel-tradiciones {
+    flex: 2;
+    min-height: 260px;
+}
+
+.panel-tradiciones label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.panel-tradiciones select {
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #292929;
+    border-radius: 6px;
+}
+
+.tarjetas-tradiciones {
+    margin-top: 18px;
+    min-height: 170px;
+    border: 1px solid #1d1d1d;
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.contenido-tradiciones .imagen-descripcion {
+    flex: 1;
+}
+
+.contenido-tradiciones .imagen-descripcion img {
+    border: 1px solid #f5d889;
+    border-radius: 10px;
+}
+
+
+/* Cuenta regresiva: título y relojes centrados */
+.seccion-cuenta-regresiva {
+    text-align: center;
+}
+
+.tituloCuenta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 760px;
+    margin: 12px auto 38px;
+    gap: 20px;
+    padding: 16px 28px;
+    background-color: #35634a;
+    border: 1px solid #cba85d;
+    border-radius: 10px;
+}
+
+.tituloCuenta h2 {
+    margin: 0;
+    color: #fff4d4;
+    font-size: 32px;
+    text-align: center;
+}
+
+.tituloCuenta img {
+    width: 72px;
+    height: 72px;
+}
+
+.contenedor-cuenta {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.caja-tiempo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #fffdf9;
+    border: 1px solid #171717;
+    border-radius: 7px;
+}
+
+.caja-tiempo p {
+    margin: 5px 0;
+}
+
+#dias, #horas, #minutos, #segundos {
+    font-size: 55px;
+    font-weight: bold;
+    color: #9e3038;
+    line-height: 1.2;
+}
+
+#mensaje-cuenta {
+    margin: 28px 0 0;
+    color: #315944;
+    font-weight: bold;
+}
+
+
+/* Querido Santa: ilustración a la derecha del título */
+.tituloSanta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.tituloSanta h2 {
+    font-size: 34px;
+    margin: 0;
+}
+
+.tituloSanta img {
+    width: 126px;
+    height: 126px;
+}
+
+.tituloForm, .tituloFormLista {
+    margin-bottom: 12px;
+}
+
+.tituloForm h3, .tituloFormLista h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+/* Formulario grande de la carta: borde negro de 1px */
+.formCarta {
+    padding: 28px;
+    border: 1px solid #181818;
+    border-radius: 8px;
+    background-color: #fffefa;
+}
+
+.contenido-formulario-carta {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+}
+
+.columna-datos, .columna-opciones {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.columna-mensaje {
+    flex: 1;
+}
+
+.campo-formulario label {
+    font-size: 14px;
+}
+
+.columna-datos .campo-formulario,
+.columna-opciones div.campo-formulario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.columna-datos .campo-formulario label,
+.columna-opciones div.campo-formulario label {
+    min-width: 87px;
+}
+
+.columna-datos input,
+.columna-opciones input[type="text"] {
+    width: 100%;
+    min-width: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #fffdf9;
+    border: 1px solid #6a5757;
+    border-radius: 5px;
+}
+
+.columna-opciones fieldset {
+    border: 1px solid #b9a08c;
+    border-radius: 6px;
+    margin: 0;
+    padding: 8px 12px 12px;
+}
+
+.columna-opciones legend {
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+.columna-opciones fieldset label {
+    margin-right: 9px;
+}
+
+.columna-opciones input[type="checkbox"] {
+    flex-shrink: 0;
+}
+
+.columna-mensaje label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.columna-mensaje textarea {
+    display: block;
+    width: 100%;
+    min-height: 240px;
+    resize: vertical;
+}
+
+
+/* Botones de los formularios */
+.botones-formulario {
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+    margin-top: 24px;
+}
+
+button {
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding: 13px 33px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #212121;
+}
+
+button[type="submit"] {
+    background-color: #aee0ad;
+}
+
+button[type="reset"] {
+    background-color: #b58c6e;
+}
+
+button:hover {
+    filter: brightness(0.95);
+}
+
+
+/* Resumen de deseos: a la izquierda entre formularios */
+.total {
+    width: 440px;
+    max-width: 100%;
+    margin: 26px 0 30px;
+    padding: 16px 20px;
+    text-align: left;
+    background-color: #fffefa;
+    border: 1px solid #181818;
+    border-radius: 8px;
+}
+
+.total h4 {
+    margin-bottom: 9px;
+}
+
+.total p {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+#lista-deseos {
+    padding-left: 22px;
+    margin-top: 8px;
+}
+
+
+/* Lista de deseos: formulario con borde negro de 1px */
+.contenido-lista-deseos {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.formLista {
+    flex: 0 1 520px;
+    padding: 28px;
+    border: 1px solid #181818;
+    border-radius: 8px;
+    background-color: #fffefa;
+}
+
+.formLista .campo-formulario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.formLista label {
+    width: 96px;
+}
+
+.formLista input {
+    flex: 1;
+    min-width: 0;
+}
+
+.formLista button {
+    display: block;
+    margin: 10px auto 0;
+}
+
+.imagen-regalos {
+    flex: 1;
+    text-align: center;
+}
+
+.imagen-regalos img {
+    width: 170px;
+    height: 170px;
+}
+
+
+/* Créditos y pie de página */
+.contenido-creditos {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    text-align: center;
+}
+
+.contenido-creditos .imagen-descripcion {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddc391;
+    border-radius: 10px;
+}
+
+.contenido-creditos img {
+    max-height: 180px;
+}
+
+.pie-pagina {
+    color: #fff7e7;
+    padding-top: 20px;
+}
+
+.pie-pagina h2, .pie-pagina a {
+    color: #fff7e7;
+}
+
+.contenido-pie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.dato-pie {
+    flex: 1;
+    min-width: 230px;
+    display: flex;
+    gap: 10px;
+}
+
+.dato-pie img[src="ACA_INGRESA_LINK_IMAGEN"],
+img[src="ACA_INGRESA_LINK_IMAGEN"] {
+    display: none;
+}
+
+.creditos-iconos {
+    font-size: 12px;
+    margin-top: 18px;
+}
+
+
+/* Diseño adaptable para tablet y celular */
+@media (max-width: 900px) {
+
+    .contenido-introduccion,
+    .contenido-tradiciones,
+    .contenido-lista-deseos {
+        flex-direction: column;
+    }
+
+    .contenido-introduccion .imagen-descripcion,
+    .contenido-tradiciones .imagen-descripcion {
+        flex: auto;
+        width: 100%;
+    }
+
+    .contenido-formulario-carta {
+        flex-wrap: wrap;
+    }
+
+    .columna-mensaje {
+        flex: 1 1 100%;
+    }
+
+    .formLista {
+        width: 100%;
+        flex: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .encabezado, .contenido, .pie-pagina {
+        padding: 12px;
+    }
+
+    main section {
+        padding: 18px;
+    }
+
+    .titulo-pagina {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .titulo-pagina img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 24px;
+    }
+
+    .opciones li {
+        min-width: 100%;
+    }
+
+    .tituloCuenta {
+        gap: 8px;
+        padding: 13px;
+    }
+
+    .tituloCuenta h2 {
+        font-size: 20px;
+    }
+
+    .tituloCuenta img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .caja-tiempo {
+        width: 125px;
+        height: 125px;
+    }
+
+    #dias, #horas, #minutos, #segundos {
+        font-size: 36px;
+    }
+
+    .tituloSanta img {
+        width: 95px;
+        height: 95px;
+    }
+
+    .tituloSanta h2 {
+        font-size: 25px;
+    }
+
+    .formCarta, .formLista {
+        padding: 16px;
+    }
+
+    .contenido-formulario-carta {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .columna-datos,
+    .columna-opciones,
+    .columna-mensaje {
+        width: 100%;
+    }
+
+    .columna-datos, .columna-opciones {
+        gap: 18px;
+    }
+
+    .columna-datos .campo-formulario,
+    .columna-opciones div.campo-formulario {
+        flex-wrap: wrap;
+    }
+
+    .columna-datos .campo-formulario label,
+    .columna-opciones div.campo-formulario label {
+        min-width: auto;
+    }
+
+    .formLista .campo-formulario {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .botones-formulario button {
+        padding: 12px 20px;
+    }
+
+    .contenido-creditos {
+        flex-direction: column;
+    }
+}
