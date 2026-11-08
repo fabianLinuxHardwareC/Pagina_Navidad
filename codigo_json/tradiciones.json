@@ -2,31 +2,31 @@
     {
         "nombre": "La posada",
         "categoria": "religiosas",
-        "descripcion": ""
+        "descripcion": "Las posadas son celebraciones que, en algunas comunidades de Panamá, se realizan del 16 al 24 de diciembre. Inspiradas en tradiciones de otros países latinoamericanos, representan el recorrido de María y José en busca de alojamiento antes del nacimiento de Jesús. Familias, vecinos y niños participan con cantos, velas y villancicos. Durante las novenas también se escuchan aguinaldos, se organizan coros y se presentan grupos de música tradicional, fortaleciendo la convivencia comunitaria."
     },
     {
         "nombre": "Desfiles Navideños",
         "categoria": "celebraciones",
-        "descripcion": ""
+        "descripcion": "Los desfiles navideños reúnen a familias y visitantes para celebrar la llegada de la Navidad. En la ciudad de Panamá, los desfiles organizados por la Alcaldía suelen incluir carrozas decoradas e iluminadas, comparsas, bandas musicales y personajes navideños. Estas actividades llenan las calles de música, luces y alegría, y permiten que personas de todas las edades compartan las festividades."
     },
     {
         "nombre": "Misa de Gallo",
         "categoria": "religiosas",
-        "descripcion": ""
+        "descripcion": "Para muchas familias panameñas, la Misa de Gallo es una celebración religiosa fundamental de la Nochebuena. Se realiza tradicionalmente durante la noche del 24 de diciembre, en algunas iglesias cerca de la medianoche, para conmemorar el nacimiento de Jesús. Las familias se reúnen en los templos, cantan villancicos y contemplan los nacimientos o pesebres decorados. Después de la celebración, muchas personas regresan a casa para compartir la cena navideña."
     },
     {
         "nombre": "Vestir con Ropa nueva o Estreno",
         "categoria": "costumbres",
-        "descripcion": ""
+        "descripcion": "Estrenar ropa durante Navidad y Año Nuevo es una costumbre que muchas familias panameñas mantienen. Antes de las fiestas, familiares y amigos visitan almacenes y mercados para escoger prendas especiales; algunas personas ahorran durante el año para comprarlas. La ropa nueva suele utilizarse para asistir a la misa, visitar a los seres queridos o participar en las reuniones de fin de año. Más que una compra, el estreno representa ilusión, celebración y el deseo de comenzar una nueva etapa."
     },
     {
         "nombre": "El muñeco",
         "categoria": "costumbres",
-        "descripcion": ""
+        "descripcion": "En Panamá, la quema del muñeco de Año Viejo simboliza dejar atrás los malos momentos y recibir el nuevo año con esperanza. Los muñecos se elaboran con ropa y materiales reutilizados; algunos artesanos representan con creatividad a figuras de la política, el deporte y la cultura popular. En lugares como Chame y San Carlos, en Panamá Oeste, estas figuras también se exhiben a orillas de las carreteras. Tradicionalmente, se queman a la medianoche del 31 de diciembre como despedida simbólica del año que termina."
     },
     {
         "nombre": "Cena navideña",
         "categoria": "costumbres",
-        "descripcion": ""
+        "descripcion": "En Panamá, la cena de Navidad reúne a familiares y amigos alrededor de platos tradicionales. Entre los más conocidos están los tamales, preparados con masa de maíz cocida y molida, rellenos de carne y guiso criollo, envueltos en hojas de bijao o de tallo y hervidos hasta que la masa esté firme. También se sirven lechona, pavo, jamón o pernil como platos principales, acompañados de arroz con guandú, una leguminosa conocida como frijol de palo. La rosca de huevo es otro alimento característico de estas fechas: se disfruta en desayunos o al día siguiente, incluso para preparar sándwiches de pavo o pernil."
     }
 ]
