@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buzón Navideño de Fabián y Richard">
+    <title>Buzón Navideño de Fabián y Richard</title>
+    <link rel="stylesheet" href="../codigo_css/estilos.css">
+</head>
+
+<body>
+
+    <!-- Encabezado de la página -->
+    <header class="encabezado">
+        <div class="titulo-pagina">
+            <img src="/home/spiderfurry-159/Desktop/buzon-navideno-Ferrer-Tugri/Imagenes_Pagina/ArbolENcabezadoN.jpg" alt="Árbol navideño izquierdo">
+            <h1>Buzón Navideño</h1>
+            <img src="/home/spiderfurry-159/Desktop/buzon-navideno-Ferrer-Tugri/Imagenes_Pagina/ArbolENcabezadoN.jpg" alt="Árbol navideño derecho">
+        </div>
+
+        <!-- Mensaje de bienvenida -->
+        <div class="bienvenida">
+            <p>
+                ¡Bienvenido a nuestro Buzón Navideño! Aquí podrás conocer
+                tradiciones navideñas panameñas, escribir tu carta a Santa,
+                preparar tu lista de deseos y descubrir cuánto falta para Navidad.
+            </p>
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav class="barra-navegacion">
+            <h2>Menú de opciones</h2>
+
+            <div class="opciones">
+                <ul>
+                    <li>
+                        <a href="#Seccion1">
+                            <img src="ACA_INGRESA_LINK_IMAGEN" alt="Icono de tradiciones">
+                            Tradiciones
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Seccion2">
+                            <img src="ACA_INGRESA_LINK_IMAGEN" alt="Icono de carta a Santa">
+                            Carta para Santa
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Seccion3">
+                            <img src="ACA_INGRESA_LINK_IMAGEN" alt="Icono de cuenta regresiva">
+                            Días restantes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Seccion4">
+                            <img src="ACA_INGRESA_LINK_IMAGEN" alt="Icono de créditos">
+                            Créditos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Contenido principal de la página -->
+    <main class="contenido">
+
+        <!-- Sección de introducción -->
+        <section id="Introduccion" class="seccion-introduccion">
+            <h2>Introducción</h2>
+
+            <div class="contenido-introduccion">
+                <article class="texto-introduccion">
+                    <p>
+                        La Navidad es una celebración hermosa y divertida. Es ese
+                        momento del año en el que convives, ríes, comes y juegas
+                        con tus seres queridos.
+                    </p>
+                    <p>
+                        Para mí, la Navidad es una de mis fechas favoritas, porque
+                        también se convierte en un momento de reflexión sobre todo
+                        lo que ocurrió durante los últimos doce meses. En casa,
+                        cenar en familia es un auténtico ritual, y nunca puede faltar
+                        una buena rosca de huevo acompañada de puré de papa.
+                    </p>
+                    <p>
+                        Con ese espíritu de unión, nostalgia y alegría creamos este
+                        Buzón Navideño: un lugar para conocer nuestras tradiciones,
+                        compartir deseos, escribirle a Santa y disfrutar de la
+                        cuenta regresiva para Navidad.
+                    </p>
+                </article>
+
+                <div class="imagen-descripcion">
+                    <h3>Navidad en Panamá</h3>
+                    <img src="/home/spiderfurry-159/Desktop/buzon-navideno-Ferrer-Tugri/ParqueUrracaNavidad.jpeg" alt="Decoración navideña en Panamá">
+                    <p>Una época para compartir con nuestros familiares y amigos.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Sección 1: Tradiciones navideñas -->
+        <section id="Seccion1" class="seccion-tradiciones">
+            <div class="tituloTradicion">
+                <h2>Tradiciones Navideñas Panameñas</h2>
+            </div>
+
+            <div class="contenido-tradiciones">
+                <div class="panel-tradiciones">
+
+                    <!-- Filtro de categorías -->
+                    <label for="filtro-categoria">Categorías</label>
+                    <select id="filtro-categoria" name="categoria">
+                        <option value="todas">Todas las categorías</option>
+                        <option value="religiosas">Religiosas</option>
+                        <option value="costumbres">Costumbres</option>
+                        <option value="celebraciones">Celebraciones</option>
+                    </select>
+
+                    <!-- Aquí se mostrarán las tradiciones con JavaScript -->
+                    <div id="contenedor-tradiciones" class="tarjetas-tradiciones"></div>
+                </div>
+
+                <div class="imagen-descripcion">
+                    <h3>Nuestras tradiciones</h3>
+                    <img src="ACA_INGRESA_LINK_IMAGEN" alt="Tradición navideña panameña">
+                    <p>Conoce algunas de las costumbres que celebramos en Panamá.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Sección 3: Cuenta regresiva -->
+        <section id="Seccion3" class="seccion-cuenta-regresiva">
+            <div class="tituloCuenta">
+                <img src="ACA_INGRESA_LINK_IMAGEN" alt="Adorno navideño izquierdo">
+                <h2>Cuenta Regresiva</h2>
+                <img src="ACA_INGRESA_LINK_IMAGEN" alt="Adorno navideño derecho">
+            </div>
+
+            <!-- Cajas de días, horas, minutos y segundos -->
+            <div class="contenedor-cuenta">
+                <div class="caja-tiempo">
+                    <img src="ACA_INGRESA_LINK_IMAGEN" alt="Imagen de días">
+                    <p id="dias">00</p>
+                    <p>Días</p>
+                </div>
+
+                <div class="caja-tiempo">
+                    <img src="ACA_INGRESA_LINK_IMAGEN" alt="Imagen de horas">
+                    <p id="horas">00</p>
+                    <p>Horas</p>
+                </div>
+
+                <div class="caja-tiempo">
+                    <img src="ACA_INGRESA_LINK_IMAGEN" alt="Imagen de minutos">
+                    <p id="minutos">00</p>
+                    <p>Minutos</p>
+                </div>
+
+                <div class="caja-tiempo">
+                    <img src="ACA_INGRESA_LINK_IMAGEN" alt="Imagen de segundos">
+                    <p id="segundos">00</p>
+                    <p>Segundos</p>
+                </div>
+            </div>
+
+            <p id="mensaje-cuenta">¡Cada día estamos más cerca de Navidad!</p>
+        </section>
+
+        <hr>
+
+        <!-- Sección 2: Carta a Santa y lista de deseos -->
+        <section id="Seccion2" class="seccion-santa">
+            <div class="tituloSanta">
+                <h2>Querido Santa...</h2>
+                <img src="ACA_INGRESA_LINK_IMAGEN" alt="Imagen de Santa Claus">
+            </div>
+
+            <!-- Formulario de la carta -->
+            <div class="tituloForm">
+                <h3>Carta para Santa</h3>
+            </div>
+
+            <div class="formCarta">
+                <form id="form-carta">
+                    <div class="contenido-formulario-carta">
+
+                        <!-- Datos personales -->
+                        <div class="columna-datos">
+                            <div class="campo-formulario">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+
+                            <div class="campo-formulario">
+                                <label for="edad">Edad</label>
+                                <input type="number" id="edad" name="edad" min="1" required>
+                            </div>
+
+                            <div class="campo-formulario">
+                                <label for="correo">Correo electrónico</label>
+                                <input type="email" id="correo" name="correo" required>
+                            </div>
+                        </div>
+
+                        <!-- Provincia y comportamiento -->
+                        <div class="columna-opciones">
+                            <div class="campo-formulario">
+                                <label for="provincia">Provincia</label>
+                                <input type="text" id="provincia" name="provincia"
+                                       list="provincias" required>
+
+                                <datalist id="provincias">
+                                    <option value="Bocas del Toro">
+                                    <option value="Coclé">
+                                    <option value="Colón">
+                                    <option value="Chiriquí">
+                                    <option value="Darién">
+                                    <option value="Herrera">
+                                    <option value="Los Santos">
+                                    <option value="Panamá">
+                                    <option value="Panamá Oeste">
+                                    <option value="Veraguas">
+                                    <option value="Emberá-Wounaan">
+                                    <option value="Guna Yala">
+                                    <option value="Ngöbe-Buglé">
+                                </datalist>
+                            </div>
+
+                            <fieldset class="campo-formulario">
+                                <legend>¿Cómo te portaste este año?</legend>
+
+                                <input type="radio" id="bueno" name="comportamiento"
+                                       value="bueno" required>
+                                <label for="bueno">Bien</label>
+
+                                <input type="radio" id="regular" name="comportamiento"
+                                       value="regular">
+                                <label for="regular">Regular</label>
+
+                                <input type="radio" id="malo" name="comportamiento"
+                                       value="malo">
+                                <label for="malo">Mal</label>
+                            </fieldset>
+
+                            <!-- Incluir la lista de deseos -->
+                            <div class="campo-formulario">
+                                <input type="checkbox" id="incluir-lista" name="incluirLista">
+                                <label for="incluir-lista">Incluir lista de deseos</label>
+                            </div>
+                        </div>
+
+                        <!-- Texto de la carta -->
+                        <div class="columna-mensaje">
+                            <label for="carta_texto">Texto de la carta</label>
+                            <textarea id="carta_texto" name="carta_texto" rows="10"
+                                      cols="30" required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Botones de la carta -->
+                    <div class="botones-formulario">
+                        <button type="submit" id="enviar-carta">Aceptar</button>
+                        <button type="reset">Borrar</button>
+                    </div>
+                </form>
+
+                <!-- Aquí aparecerá el resultado del envío -->
+                <p id="resultado-carta"></p>
+            </div>
+
+            <!-- Formulario de la lista de deseos -->
+            <div class="tituloFormLista">
+                <h3>Lista de Deseos</h3>
+            </div>
+
+            <div class="contenido-lista-deseos">
+                <div class="formLista">
+                    <form id="form-deseos">
+
+                        <div class="campo-formulario">
+                            <label for="deseo">Deseo</label>
+                            <input type="text" id="deseo" name="deseo" required>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="precio">Precio (B/.)</label>
+                            <input type="number" id="precio" name="precio"
+                                   min="0" step="0.01" required>
+                        </div>
+
+                        <button type="submit" id="agregar-deseo">Agregar</button>
+                    </form>
+                </div>
+
+                <!-- Lista vacía y total de los deseos -->
+                <div class="total">
+                    <h4>Deseos agregados</h4>
+                    <ul id="lista-deseos"></ul>
+                    <p>Total: B/. <span id="total-deseos">0.00</span></p>
+                    <img src="ACA_INGRESA_LINK_IMAGEN" alt="Regalos de Navidad">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Registro de peticiones para la segunda parte -->
+        <section id="Registro" class="seccion-registro">
+            <h2>Registro de peticiones</h2>
+            <ul id="registro-peticiones"></ul>
+        </section>
+
+        <hr>
+
+        <!-- Sección 4: Créditos -->
+        <section id="Seccion4" class="seccion-creditos">
+            <h2>Créditos de la Página</h2>
+
+            <div class="contenido-creditos">
+                <div class="imagen-descripcion">
+                    <img src="ACA_INGRESA_LINK_IMAGEN" alt="Fotografía de Fabián Ferrer">
+                    <h3>Fabián Ferrer</h3>
+                    <p>Desarrollador del proyecto Buzón Navideño.</p>
+                </div>
+
+                <div class="imagen-descripcion">
+                    <img src="ACA_INGRESA_LINK_IMAGEN" alt="Fotografía de Richard Tugri">
+                    <h3>Richard Tugri</h3>
+                    <p>Desarrollador del proyecto Buzón Navideño.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <h2>Pie de página</h2>
+
+        <div class="contenido-pie">
+            <div class="dato-pie">
+                <img src="ACA_INGRESA_LINK_IMAGEN" alt="Icono de contacto">
+                <p>Contacto:
+                    <a href="mailto:f.alejandro.ferrer.va@gmail.com">
+                        f.alejandro.ferrer.va@gmail.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="dato-pie">
+                <img src="ACA_INGRESA_LINK_IMAGEN" alt="Icono de universidad">
+                <p>Universidad Tecnológica de Panamá (UTP)</p>
+            </div>
+
+            <div class="dato-pie">
+                <img src="ACA_INGRESA_LINK_IMAGEN" alt="Icono de GitHub">
+                <p>Repositorio:
+                    <a href="https://github.com/fabianLinuxHardwareC/Pagina_Navidad.git"
+                       target="_blank" rel="noopener noreferrer">GitHub</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
