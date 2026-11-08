@@ -1,4 +1,4 @@
-/* Estilos generales de la página */
+
 * {
     box-sizing: border-box;
 }
@@ -28,8 +28,6 @@ img {
     max-width: 100%;
 }
 
-
-/* Contenedores principales */
 .encabezado, .contenido, .pie-pagina {
     max-width: 1200px;
     margin: 0 auto;
@@ -51,8 +49,6 @@ hr {
     margin: 10px auto;
 }
 
-
-/* Encabezado con los árboles a los lados */
 .titulo-pagina {
     display: flex;
     justify-content: space-between;
@@ -80,7 +76,6 @@ hr {
 }
 
 
-/* Mensaje de bienvenida */
 .bienvenida {
     margin: 20px 0;
     padding: 18px 24px;
@@ -95,7 +90,6 @@ hr {
 }
 
 
-/* Menú horizontal */
 .barra-navegacion h2 {
     color: #fff9ec;
     margin-bottom: 10px;
@@ -147,7 +141,6 @@ hr {
 }
 
 
-/* Introducción: imagen a la izquierda y texto a la derecha */
 .contenido-introduccion {
     display: flex;
     align-items: center;
@@ -227,7 +220,6 @@ hr {
 }
 
 
-/* Cuenta regresiva: título y relojes centrados */
 .seccion-cuenta-regresiva {
     text-align: center;
 }
@@ -295,7 +287,6 @@ hr {
 }
 
 
-/* Querido Santa: ilustración a la derecha del título */
 .tituloSanta {
     display: flex;
     justify-content: center;
@@ -323,8 +314,6 @@ hr {
     font-size: 20px;
 }
 
-
-/* Formulario grande de la carta: borde negro de 1px */
 .formCarta {
     padding: 28px;
     border: 1px solid #181818;
@@ -419,7 +408,6 @@ select {
 }
 
 
-/* Botones de los formularios */
 .botones-formulario {
     display: flex;
     justify-content: flex-end;
@@ -449,8 +437,6 @@ button:hover {
     filter: brightness(0.95);
 }
 
-
-/* Resumen de deseos: a la izquierda entre formularios */
 .total {
     width: 440px;
     max-width: 100%;
@@ -476,8 +462,6 @@ button:hover {
     margin-top: 8px;
 }
 
-
-/* Lista de deseos: formulario con borde negro de 1px */
 .contenido-lista-deseos {
     display: flex;
     align-items: center;
@@ -542,45 +526,38 @@ button:hover {
 .contenido-creditos img {
     max-height: 180px;
 }
-/* Pie de página */
+
+
 .pie-pagina {
     max-width: 1160px;
     margin: 22px auto 32px;
     padding: 28px 30px;
 
-    /* Cuadro blanco */
     background-color: #fff8ef;
     border: 1px solid #f8dda1;
     border-radius: 14px;
-
-    /* Texto */
     color: #25201e;
 
-    /* Desplazamiento hacia la derecha */
     position: relative;
     left: 15px;
 }
 
-/* Título del pie de página */
 .pie-pagina h2 {
     color: #722b31;
     margin-bottom: 20px;
 }
 
-/* Enlaces */
 .pie-pagina a {
     color: #206047;
     font-weight: bold;
 }
 
-/* Distribución del contenido */
 .contenido-pie {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
-/* Información del pie de página */
 .contenido-pie {
     display: flex;
     justify-content: space-between;
@@ -588,7 +565,6 @@ button:hover {
     gap: 20px;
 }
 
-/* Contenedor de cada logotipo y su texto */
 .dato-pie {
     display: flex;
     align-items: center;
@@ -597,7 +573,7 @@ button:hover {
     gap: 12px;
 }
 
-/* Tamaño de los logotipos */
+
 .dato-pie img {
     width: 45px;
     height: 45px;
@@ -605,20 +581,17 @@ button:hover {
     flex-shrink: 0;
 }
 
-/* Texto de los logotipos */
 .dato-pie p {
     margin: 0;
     font-size: 14px;
     overflow-wrap: anywhere;
 }
 
-/* Enlaces del pie de página */
 .dato-pie a {
     overflow-wrap: anywhere;
 }
 
 
-/* Diseño adaptable para tablet y celular */
 @media (max-width: 900px) {
 
     .contenido-introduccion,
@@ -750,30 +723,26 @@ button:hover {
         flex-direction: column;
     }
 }
-/* Pie de página en celulares */
+
 @media (max-width: 600px) {
 
-    /* Contenedor principal */
     .pie-pagina {
         left: 0;
         margin: 14px 12px 24px;
         padding: 18px;
     }
 
-    /* Organización vertical */
     .contenido-pie {
         flex-direction: column;
         align-items: stretch;
     }
 
-    /* Información del pie de página */
     .dato-pie {
         width: 100%;
         min-width: 0;
         overflow-wrap: anywhere;
     }
 
-    /* Tamaño de los logotipos */
     .dato-pie img {
         width: 38px;
         height: 38px;
